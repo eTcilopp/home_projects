@@ -1,7 +1,7 @@
 import requests
 from urllib.parse import urljoin
 import pandas as pd
-from datetime import datetime
+from datetime import datetime, timedelta
 
 USER_PROFILE_ID = 58
 API_TOKEN = '7M8AE85Ko65VoqR5P1kEnoch0rIwk3AxEsorWNmt'

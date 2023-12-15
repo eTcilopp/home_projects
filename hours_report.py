@@ -1,6 +1,7 @@
 import requests
 from urllib.parse import urljoin
 import pandas as pd
+from datetime import datetime
 
 USER_PROFILE_ID = 58
 API_TOKEN = '7M8AE85Ko65VoqR5P1kEnoch0rIwk3AxEsorWNmt'
@@ -24,7 +25,7 @@ headers = {
 url = urljoin(BASE_URL, PODUCTION_REPORT_URL)
 params = {
     'created_by_id': USER_PROFILE_ID,
-    'submitted_date__gte': '2023-10-01'
+    'submitted_date__gte': (datetime.now().date() - timedelta(weeks=8)).strftime('%Y-%m-%d')
 }
 
 response = requests.get(url, params=params, headers=headers)

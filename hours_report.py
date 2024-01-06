@@ -4,7 +4,7 @@ import pandas as pd
 from datetime import datetime, timedelta
 
 USER_PROFILE_ID = 58
-API_TOKEN = '7M8AE85Ko65VoqR5P1kEnoch0rIwk3AxEsorWNmt'
+VITRUVI_API_TOKEN = '7M8AE85Ko65VoqR5P1kEnoch0rIwk3AxEsorWNmt'
 
 BASE_URL = 'https://internal.api.vitruvi.cc'
 PODUCTION_REPORT_URL = 'api/v1/raw/production/productionreport'
@@ -16,7 +16,7 @@ QUANTITY_DESCRIPTION_URL = 'api/v1/raw/core/quantitydescription'
 
 headers = {
     'accept': 'application/json',
-    'Authorization': f'Bearer {API_TOKEN}'
+    'Authorization': f'Bearer {VITRUVI_API_TOKEN}'
 }
 
 
